@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.core-team {
+  padding: 100px 0;
+}
+
+.core-team-main {
+  width: 100%;
+  position: relative;
+}
+
+
+
+.core-team-detail {
+  width: 282px;
+  height: 380px;
+  text-align: center;
+  padding: 10px 15px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.core-team-detail::after {
+  content: '';
+  width: 282px;
+  height: 167px;
+  background: rgba(224, 224, 244, 0.5);
+  border-radius: 15px;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 95px;
+  left: 0;
+  z-index: -1;
+  padding: 10px 15px;
+}
+
+.core-team-detail:hover::after {
+  height: 338px;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 10px rgba(48, 48, 48, 0.15);
+}
+ 
+.core-team-detail .imgBx {
+  width: 198px;
+  margin: auto;
+  transition: 0.5s ease-in-out;
+}
+
+.core-team-detail:hover .imgBx {
+  width: 100px;
+  margin: -49px auto 0;
+} 
+
+.core-team-detail:hover p {
+  display: block;
+  transition: all 0.5s ease-in-out;
+  animation: fadeIn .5s linear
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.core-team-detail .imgBx img {
+  max-width: 100%;
+}
+
+.team-info {
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.team-info p {
+  display: none;
+  transition: all 1s ease-in-out;
+  transition-delay: 1s;
+}

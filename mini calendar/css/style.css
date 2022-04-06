@@ -1,0 +1,67 @@
+/* ================================
+Reset code
+=================================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  border: none;
+  vertical-align: middle;
+}
+
+/* =======================================
+main css
+========================================== */
+.calendar {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(rgba(100, 104, 104, 0.9), rgba(82, 79, 79, 0.1)) , url('../images/bg.jpg') center center no-repeat;
+}
+
+.calendar-main {
+  width: 220px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 5px 7px 10px rgba(12, 12, 12, 0.5);
+  overflow: hidden;
+}
+
+.calendar-main span {
+  display: block; 
+  color: #073b4c;
+  text-transform: capitalize;
+}
+
+.calendar-main .month {
+  padding: 6px 0px;
+  font-size: 25px;
+  font-weight: 600;
+  background: #fff;
+}
+
+.calendar-main .date {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 70px;
+  background-color: #faa307;
+  padding: 15px 0;
+}
+
+.calendar-main .day, .calendar-main .year {
+  display: inline-block;
+  padding: 10px 0px;
+}
+

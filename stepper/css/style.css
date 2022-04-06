@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; box-sizing: border-box; outline: none; } 
+ul, p { margin: 0; } 
+.container { max-width:1360px; width: 90%; margin: 0 auto; } 
+ul.stepper-main { width: 100%; position: relative; text-align: center; overflow: hidden; } 
+.status span { font-size: 14px; } 
+.stepper-content h5 { font-size: 14px; font-weight: 400; color: #303030; } 
+ul li { width: 25%; position: relative; padding: 0 10px; } 
+.stepper-content { padding-top: 30px; } 
+.stepper-content p { font-size: 13px; line-height: 16px; color: #303030; padding: 0 16px; } 
+.stepper-content small { font-size: 11px; color: #999; } 
+.stepper-content p span { display: block; } 
+.bg-danger { background-color: #ffe8d9ce!important; } 
+.border-2 { border-radius: 2px; } 
+ul li:nth-of-type(2) .stepper-content p, ul li:nth-of-type(3) .stepper-content p { color: gray; } 
+ul li.stepper:after { content: ''; width: 95%; height: 2px; position: absolute; top: 35px; left: 154px; z-index: 1; background: #d0d0d0; margin: 0 auto; } 
+ul li.done::after { background: green; } 
+ul li.pending:after { background: none; } 
+ul li.stepper::before { content: '\f058'; font-family: 'Fontawesome'; position: absolute; left: 135px; top: 21px; text-align: center; z-index: 5; font-size: 20px; color: green; width: 25px; height: 25px; margin: 0 auto; } 
+ul li:nth-of-type(3)::before { content: '\f192'; } 
+ul li:nth-of-type(4)::before { content: '\f10c'; color: #d0d0d0; } 
+
+
+ @media (max-width: 992px) and (min-width: 768px) { ul.stepper-main { flex-direction: column; text-align: left; } 
+ ul li { display: flex; justify-content: space-between; width: 100%; flex-direction: row-reverse; margin-bottom: 11px; } 
+ .stepper-content ,.stepper-content p { padding: 0; } 
+ .status span { font-size: 12px; } 
+ .stepper-content { margin-left: 30px; max-width: 350px; } 
+ ul li.stepper::before { left: 0; top: -2px; font-size: 15px; } 
+ ul li.pending .stepper-content p { width: 100%; } 
+ ul li.stepper:after { top: 14px; height: 100%; width: 2px; left: 12px; font-size: 15px; } 
+ }
+
+ @media (max-width: 767px) and (min-width: 320px) { ul.stepper-main { flex-direction: column; text-align: left; } 
+ ul li { display: flex; justify-content: space-between; width: 100%; flex-direction: row-reverse; margin-bottom: 11px; } 
+ .stepper-content ,.stepper-content p { padding: 0; } 
+ .status span { font-size: 12px; } 
+ .stepper-content { margin-left: 30px; max-width: 200px; } 
+ ul li.stepper::before { left: 0; top: -2px; font-size: 15px; } 
+ ul li.pending .stepper-content p { width: 100%; } 
+ ul li.stepper:after { top: 14px; height: 100%; width: 2px; left: 12px; font-size: 15px; } 
+ }

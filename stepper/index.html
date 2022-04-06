@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stepper</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="container py-5">
+      <div class="mb-5 text-center">
+        <h3>Stepper</h3>
+      </div>
+      <ul class="stepper-main d-flex justify-content-between list-unstyled">
+        <li class="stepper done">
+          <div class="status">
+            <span class="font-weight-medium text-success">Done</span>
+          </div>
+          <div class="stepper-content">
+            <h5>Order placed with Kotak Securities</h5>
+            <small class="d-block mb-2">1 Mar 2019, 12.15 PM</small>
+            <p>
+              <span class="text-secondary">Mode of Payment -</span>
+              Kotak Mahindra Bank a/c XXXXX 0982
+            </p>
+          </div>
+        </li>
+        <li class="stepper done">
+          <div class="status">
+            <span class="font-weight-medium text-success">Done</span>
+          </div>
+          <div class="stepper-content">
+            <h5>Order Placed with AMC</h5>
+            <small class="d-block mb-2">3 Mar 2019, 12.15 PM</small>
+            <p>Since your order is placed before cutoff, the NAV date applicable is 31 Mar 2020</p>
+          </div>
+        </li>
+        <li class="stepper in-progress">
+          <div class="status">
+            <span class="font-weight-medium text-success">In Progress</span>
+          </div>
+          <div class="stepper-content">
+            <h5>Confirmed from AMC</h5>
+            <small class="d-block mb-2">6 Mar 2019, 12.15 PM</small>
+            <p>We are yet to received confirmation from the AMC ideally it should be confirmed within 1-2days</p>
+          </div>
+        </li>
+        <li class="stepper pending">
+          <div class="status">
+            <span class="font-weight-medium text-secondary">Pending</span>
+          </div>
+          <div class="stepper-content">
+            <h5>Units allotted</h5>
+            <small class="d-block mb-2"><span class="expetDate">Expected date: </span>6 Mar 2019, 12.15 PM</small>
+            <p class="bg-danger p-2 border-2 text-left">It usually takes 2-3 business days for the units to be credited</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
+</html>
